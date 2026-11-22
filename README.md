@@ -144,10 +144,20 @@ git push origin main
 
 Review `git status` before committing. Never commit `.env` files or `node_modules`.
 
+## GitHub Pages frontend
+
+The static frontend is deployed from `main` at
+[https://chiragantil07.github.io/Prera_Final_Website/](https://chiragantil07.github.io/Prera_Final_Website/).
+GitHub Pages does not host the Express API or PostgreSQL database, so API-backed
+forms, admin features, and dynamic content need a separately hosted backend and
+a configured `VITE_API_URL`.
+
 ## Project structure
 
 ```text
 PRERA/
+├── .github/
+│   └── workflows/               # GitHub Pages deployment
 ├── frontend/
 │   ├── public/
 │   └── src/
@@ -161,7 +171,6 @@ PRERA/
 ├── backend/
 │   ├── prisma/                  # Prisma schema and migrations
 │   └── src/                     # Config, controllers, middleware, routes, utils
-└── dbms/                        # Database design notes, schema, and queries
 ```
 
 PRERA — Creating Connections. Enabling Collaborations. Building Experiences.
