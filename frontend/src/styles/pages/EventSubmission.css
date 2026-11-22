@@ -1,0 +1,149 @@
+
+.submission-page {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  padding: 100px 6%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submission-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 55px;
+}
+
+.submission-tag {
+  color: gold;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submission-header h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin: 20px 0;
+}
+
+.submission-header h1 span {
+  color: gold;
+}
+
+.submission-header p:last-child {
+  color: #aaa;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.submission-form {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px;
+  background: #171717;
+  border: 1px solid #383838;
+  border-radius: 25px;
+}
+
+.submission-form h2 {
+  margin-bottom: 30px;
+  color: gold;
+}
+
+.submission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.submission-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.submission-field label {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.submission-field input,
+.submission-field select,
+.submission-field textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #0d0d0d;
+  color: white;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.submission-field input:focus,
+.submission-field select:focus,
+.submission-field textarea:focus {
+  border-color: gold;
+}
+
+.submission-field input::placeholder,
+.submission-field textarea::placeholder {
+  color: #777;
+}
+
+.submission-field select option {
+  background: #171717;
+}
+
+.submission-field input[type="file"] {
+  cursor: pointer;
+}
+
+.submission-field small {
+  color: #999;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submission-button {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  margin-top: 20px;
+  background: gold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submission-button:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+  .submission-page {
+    padding: 70px 5%;
+  }
+
+  .submission-form {
+    padding: 22px;
+  }
+
+  .submission-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .submission-header p:last-child {
+    font-size: 16px;
+  }
+}

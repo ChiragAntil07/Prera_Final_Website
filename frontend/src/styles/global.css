@@ -1,0 +1,354 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f5f5f2;
+  background: #080a0c;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-bg: #080a0c;
+  --color-surface: #111519;
+  --color-surface-raised: #171d21;
+  --color-accent: #f3c94f;
+  --color-accent-soft: rgba(243, 201, 79, 0.14);
+  --color-text: #f5f5f2;
+  --color-muted: #a6afb4;
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #101113;
+  background: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f3f5f6;
+  --color-surface: #ffffff;
+  --color-surface-raised: #e9eef0;
+  --color-accent: #936700;
+  --color-accent-soft: rgba(147, 103, 0, 0.1);
+  --color-text: #192328;
+  --color-muted: #5e6b72;
+  --color-border: rgba(25, 40, 47, 0.15);
+}
+
+:root[data-theme="light"] body {
+  background: var(--color-bg) !important;
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .site-nav {
+  border-color: var(--color-border);
+  background: rgba(248, 250, 251, 0.9);
+}
+
+:root[data-theme="light"] .nav-link {
+  color: var(--color-muted);
+}
+
+:root[data-theme="light"] .nav-link:hover,
+:root[data-theme="light"] .nav-link[aria-current="page"] {
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .nav-links {
+  background-color: rgba(248, 250, 251, 0.98);
+}
+
+:root[data-theme="light"] .menu-toggle {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .site-footer {
+  border-color: var(--color-border);
+  background: #e9eef0;
+}
+
+:root[data-theme="light"] .app-shell-home,
+:root[data-theme="light"] .app-shell-about {
+  background: var(--color-bg);
+}
+
+:root[data-theme="light"] .app-shell-home::before,
+:root[data-theme="light"] .app-shell-about::before {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(243, 245, 246, 0.82) 0%,
+      rgba(243, 245, 246, 0.84) 36%,
+      rgba(243, 245, 246, 0.86) 72%,
+      rgba(243, 245, 246, 0.86) 100%
+    ),
+    var(--home-background-image);
+}
+
+:root[data-theme="light"] .app-shell-home .site-footer,
+:root[data-theme="light"] .app-shell-about .site-footer {
+  background: rgba(243, 245, 246, 0.28);
+}
+
+:root[data-theme="light"] .home-heading {
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .home-desc {
+  color: var(--color-muted);
+}
+
+:root[data-theme="light"] .home-partners-label {
+  color: var(--color-muted);
+}
+
+:root[data-theme="light"] #impact-div,
+:root[data-theme="light"] .about-detail-card,
+:root[data-theme="light"] .team-card,
+:root[data-theme="light"] #event_card,
+:root[data-theme="light"] .feedback-form,
+:root[data-theme="light"] .submission-form,
+:root[data-theme="light"] .admin-login-card,
+:root[data-theme="light"] .admin-stat-card,
+:root[data-theme="light"] .admin-feedback-section,
+:root[data-theme="light"] .admin-feedback-card,
+:root[data-theme="light"] .connect-card,
+:root[data-theme="light"] .connect-form-panel,
+:root[data-theme="light"] .contactMain .formBox {
+  border-color: var(--color-border) !important;
+  background: linear-gradient(145deg, #ffffff, #edf1f3) !important;
+  box-shadow: 0 12px 30px rgba(27, 44, 52, 0.06);
+}
+
+:root[data-theme="light"] .feedback-page,
+:root[data-theme="light"] .admin-login-page,
+:root[data-theme="light"] .admin-dashboard,
+:root[data-theme="light"] .submission-page,
+:root[data-theme="light"] .partnerPage,
+:root[data-theme="light"] .contactMain,
+:root[data-theme="light"] .prera-connect {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+
+:root[data-theme="light"] .team {
+  background: transparent;
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .about-heading,
+:root[data-theme="light"] .about-detail-card h2,
+:root[data-theme="light"] .team-title,
+:root[data-theme="light"] .team-card-heading h3,
+:root[data-theme="light"] #Events,
+:root[data-theme="light"] #Events h1,
+:root[data-theme="light"] #event_card h2,
+:root[data-theme="light"] #event_card h3,
+:root[data-theme="light"] .feedback-heading h1,
+:root[data-theme="light"] .submission-header h1,
+:root[data-theme="light"] .submission-field label,
+:root[data-theme="light"] .admin-login-card h1,
+:root[data-theme="light"] .admin-header h1,
+:root[data-theme="light"] .admin-feedback-message,
+:root[data-theme="light"] .connect-hero > h1,
+:root[data-theme="light"] .connect-card h2,
+:root[data-theme="light"] .form-heading h2,
+:root[data-theme="light"] .contactMain .heading {
+  color: var(--color-text) !important;
+}
+
+:root[data-theme="light"] #about-box,
+:root[data-theme="light"] .detail-card-content,
+:root[data-theme="light"] .about-detail-card .detail-card-content,
+:root[data-theme="light"] #intro-content,
+:root[data-theme="light"] #event-intro,
+:root[data-theme="light"] .deatils,
+:root[data-theme="light"] .team-subtitle,
+:root[data-theme="light"] .team-role,
+:root[data-theme="light"] .feedback-description,
+:root[data-theme="light"] .feedback-form label,
+:root[data-theme="light"] .submission-header p:last-child,
+:root[data-theme="light"] .submission-field small,
+:root[data-theme="light"] .admin-login-description,
+:root[data-theme="light"] .admin-login-card label,
+:root[data-theme="light"] .admin-stat-card p,
+:root[data-theme="light"] .admin-feedback-top p,
+:root[data-theme="light"] .admin-feedback-date,
+:root[data-theme="light"] .admin-empty,
+:root[data-theme="light"] .connect-hero > p,
+:root[data-theme="light"] .connect-card p,
+:root[data-theme="light"] .connect-card li,
+:root[data-theme="light"] .card-topline > span,
+:root[data-theme="light"] .form-heading p,
+:root[data-theme="light"] .prera-field,
+:root[data-theme="light"] .connect-contact p,
+:root[data-theme="light"] .contactMain .subText {
+  color: var(--color-muted) !important;
+}
+
+:root[data-theme="light"] #about-box,
+:root[data-theme="light"] #tagline,
+:root[data-theme="light"] .about-heading-gold,
+:root[data-theme="light"] .submission-tag,
+:root[data-theme="light"] .submission-form h2,
+:root[data-theme="light"] .admin-eyebrow,
+:root[data-theme="light"] .admin-stat-card h2,
+:root[data-theme="light"] .admin-message,
+:root[data-theme="light"] .admin-rating,
+:root[data-theme="light"] .connect-eyebrow,
+:root[data-theme="light"] .card-icon.gold,
+:root[data-theme="light"] .connect-back,
+:root[data-theme="light"] .prera-field span b {
+  color: var(--color-accent) !important;
+}
+
+:root[data-theme="light"] #impact-div > h1,
+:root[data-theme="light"] #impact-div > h3,
+:root[data-theme="light"] #impact-div [aria-label] {
+  color: var(--color-text) !important;
+}
+
+:root[data-theme="light"] #impact-div [aria-label] {
+  color: var(--color-accent) !important;
+}
+
+:root[data-theme="light"] .impact-numbers-grid h3 {
+  color: var(--color-muted) !important;
+}
+
+:root[data-theme="light"] .mainHeading,
+:root[data-theme="light"] .partnerTop .subText {
+  color: var(--color-text) !important;
+}
+
+:root[data-theme="light"] .mainHeading span,
+:root[data-theme="light"] .feedback-heading h1 span,
+:root[data-theme="light"] .submission-header h1 span,
+:root[data-theme="light"] .connect-hero > h1 span,
+:root[data-theme="light"] .connect-contact h2 {
+  color: var(--color-accent) !important;
+  text-shadow: none;
+}
+
+:root[data-theme="light"] #event_card p,
+:root[data-theme="light"] #event_card .deatils {
+  color: var(--color-muted) !important;
+}
+
+:root[data-theme="light"] .filter {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-muted);
+}
+
+:root[data-theme="light"] .filter:hover,
+:root[data-theme="light"] .filter.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+:root[data-theme="light"] .feedback-form input,
+:root[data-theme="light"] .feedback-form select,
+:root[data-theme="light"] .feedback-form textarea,
+:root[data-theme="light"] .submission-field input,
+:root[data-theme="light"] .submission-field select,
+:root[data-theme="light"] .submission-field textarea,
+:root[data-theme="light"] .admin-login-card input,
+:root[data-theme="light"] .admin-toolbar input,
+:root[data-theme="light"] .admin-toolbar select,
+:root[data-theme="light"] .admin-card-actions select,
+:root[data-theme="light"] .prera-field input,
+:root[data-theme="light"] .prera-field select,
+:root[data-theme="light"] .prera-field textarea,
+:root[data-theme="light"] .contactMain .input,
+:root[data-theme="light"] .contactMain .textarea {
+  border-color: var(--color-border);
+  background: #ffffff;
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .feedback-form input::placeholder,
+:root[data-theme="light"] .feedback-form textarea::placeholder,
+:root[data-theme="light"] .submission-field input::placeholder,
+:root[data-theme="light"] .submission-field textarea::placeholder,
+:root[data-theme="light"] .prera-field input::placeholder,
+:root[data-theme="light"] .prera-field textarea::placeholder,
+:root[data-theme="light"] .contactMain .input::placeholder,
+:root[data-theme="light"] .contactMain .textarea::placeholder {
+  color: #78858b;
+}
+
+:root[data-theme="light"] .connect-secondary,
+:root[data-theme="light"] .team-socials a,
+:root[data-theme="light"] .contactMain .infoItem {
+  color: var(--color-text);
+}
+
+:root[data-theme="light"] .connect-contact {
+  border-color: var(--color-border);
+}
+
+:root[data-theme="light"] .connect-contact a {
+  color: var(--color-accent);
+}
+
+:root[data-theme="light"] .feedback-form button:hover,
+:root[data-theme="light"] .submission-button:hover {
+  background: #dce3e6;
+  color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+  :root[data-theme="light"] .nav-links {
+    background: rgba(248, 250, 251, 0.98);
+  }
+}
