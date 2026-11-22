@@ -255,8 +255,9 @@
 }
 
 @media (max-width: 700px) {
+  .admin-login-page,
   .admin-dashboard {
-    padding: 40px 16px;
+    padding: 92px 16px 40px;
   }
 
   .admin-stats {
@@ -268,7 +269,13 @@
   }
 
   .admin-header {
-    align-items: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .admin-logout {
+    align-self: flex-start;
   }
 
   .admin-feedback-section {
@@ -402,7 +409,26 @@
   }
 
   .admin-tabs button {
-    padding: 12px;
+    min-width: 0;
+    padding: 12px 6px;
     font-size: 12px;
+  }
+
+  .admin-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .admin-event-details {
+    gap: 10px 14px;
+  }
+
+  .admin-event-details span {
+    overflow-wrap: anywhere;
+  }
+
+  .admin-card-actions {
+    flex-wrap: wrap;
   }
 }

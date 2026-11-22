@@ -131,7 +131,7 @@
 
 @media (max-width: 650px) {
   .submission-page {
-    padding: 70px 5%;
+    padding: 92px 5% 48px;
   }
 
   .submission-form {
@@ -144,6 +144,12 @@
   }
 
   .submission-header p:last-child {
+    font-size: 16px;
+  }
+
+  .submission-field input,
+  .submission-field select,
+  .submission-field textarea {
     font-size: 16px;
   }
 }

@@ -201,11 +201,18 @@
 
 @media (max-width: 600px) {
   .feedback-page {
-    padding: 55px 15px;
+    align-items: flex-start;
+    padding: 92px 15px 48px;
   }
 
   .feedback-form {
     padding: 22px;
+  }
+
+  .feedback-form input,
+  .feedback-form select,
+  .feedback-form textarea {
+    font-size: 16px;
   }
 
   .feedback-review-card {

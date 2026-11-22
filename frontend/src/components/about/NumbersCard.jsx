@@ -58,11 +58,10 @@ export default function Numbers_card({number,message}){
 
     return (
         <div>
-            <h1 ref={numberRef} aria-label={value} style={{color:'gold',marginBottom:'0px',fontSize:'50px'}}>
+            <h1 ref={numberRef} className="impact-number-value" aria-label={value}>
                 <span aria-hidden="true">{displayValue}</span>
             </h1>
-            <h3 style={{color:'rgb(187, 184, 184)',fontWeight:'lighter',marginTop:'5px',
-                fontSize:'20px' }}>{message}</h3>
+            <h3 className="impact-number-label">{message}</h3>
         </div>
     );
 }

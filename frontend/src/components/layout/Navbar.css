@@ -162,6 +162,8 @@
         z-index: 1001;
         width: min(390px, 86vw);
         height: 100dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
         visibility: hidden;
         padding: 100px 32px 32px;
         align-items: stretch;

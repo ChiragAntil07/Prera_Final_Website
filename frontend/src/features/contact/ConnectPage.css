@@ -45,4 +45,10 @@
 .connect-contact h2 { color:#ffda00; font-size:29px; font-weight:500; margin:0 0 12px; }
 .connect-contact p { color:#aaa49a; font-size:14px; }
 .connect-contact a { color:#ffda00; text-decoration:none; }
-@media(max-width:760px) { .connect-hero { padding:52px 17px 0; } .connect-cards { grid-template-columns:1fr; gap:17px; } .connect-card { padding:25px; min-height:0; } .connect-card h2 { font-size:22px; } .connect-card p { min-height:0; } .connect-form-panel { padding:22px 17px; } .prera-form-grid { grid-template-columns:1fr; } .prera-field.full,.prera-submit-row { grid-column:auto; } .prera-submit-row .connect-primary { width:100%; } .desktop-break { display:none; } .connect-hero > p { margin-bottom:32px; } }
+@media(max-width:760px) { .connect-hero { padding:92px 17px 0; } .connect-cards { grid-template-columns:1fr; gap:17px; } .connect-card { padding:25px; min-height:0; } .connect-card h2 { font-size:22px; } .connect-card p { min-height:0; } .connect-form-panel { padding:22px 17px; } .prera-form-grid { grid-template-columns:1fr; } .prera-field.full,.prera-submit-row { grid-column:auto; } .prera-submit-row .connect-primary { width:100%; } .desktop-break { display:none; } .connect-hero > p { margin-bottom:32px; } }
+@media(max-width:480px) {
+    .connect-contact { margin-top:48px; padding:48px 16px 56px; }
+    .prera-field input,
+    .prera-field select,
+    .prera-field textarea { font-size:16px; }
+}

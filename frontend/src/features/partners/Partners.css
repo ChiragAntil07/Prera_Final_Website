@@ -97,7 +97,7 @@
 
 @media (max-width: 1024px) {
     .partnerPage {
-        padding: 40px 40px;
+        padding: 100px 40px 48px;
     }
     .mainHeading {
         font-size: 48px;
@@ -106,8 +106,13 @@
 
 @media (max-width: 768px) {
     .partnerPage {
-        padding: 40px 20px;
+        padding: 100px 20px 48px;
     }
+
+    .partnerTop {
+        margin-bottom: 44px;
+    }
+
     .mainHeading {
         font-size: 36px;
     }
@@ -122,10 +127,25 @@
 }
 
 @media (max-width: 480px) {
-    .mainHeading {
-        font-size: 32px;
+    .partnerPage {
+        padding: 92px 16px 40px;
     }
+
+    .mainHeading {
+        font-size: clamp(28px, 8vw, 32px);
+    }
+
     .subText {
         font-size: 16px;
+    }
+
+    .logoGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .logoBox {
+        height: 108px;
+        padding: 14px;
     }
 }
